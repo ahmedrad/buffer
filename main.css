@@ -1,0 +1,272 @@
+h1,
+h2,
+h3 {
+  font-family: Lato;
+  color: rgb(120,120,120);
+  font-weight: 300;
+  letter-spacing:2px;
+  text-align: center;
+  line-height: 1.4;
+  margin: 5px;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+h1 {font-size: 58px;}
+h2 {font-size: 32px;}
+h3 {font-size: 18px;}
+
+p,
+a
+{
+  font-family: Lato;
+  color: rgb(150,150,150);
+  font-weight: 300;
+  letter-spacing: 0.8px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+a, a:hover, a:focus {
+  text-decoration: none;
+  color: maroon;
+}
+
+.inherit-height {
+  height: inherit;
+}
+
+.third-height {
+  height: 50%;
+  min-height: 200px;
+}
+
+.margin-bm-sm {
+  margin-bottom: 8px;
+}
+
+.margin-bm-m {
+  margin-bottom: 16px;
+}
+
+.margin-bm-lg {
+  margin-bottom: 24px;
+}
+
+.center-text {
+  text-align: center;
+  max-width: 700px;
+  padding: 0 45px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0 20px;
+}
+
+.headline-bold {
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.intro {
+  background: url(img/background.jpg);
+}
+
+.intro h1 {
+  letter-spacing: 3px;
+  color: white;
+  margin: 0;
+  font-size: 70px;
+}
+
+.intro h2 {
+  letter-spacing: 1px;
+  color:white;
+  margin: 5px;
+  font-size: 24px;
+}
+
+.light-color-bg {
+  background-color: #FBFBFB;
+}
+
+.part-1 {
+
+}
+.flex-half-container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.flex-half-container-v {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.flex-half-item {
+  flex: 1;
+}
+
+#why {
+  /*background-image: url('img/why.jpg');*/
+  background-position: center;
+  background-size: cover;
+}
+
+#why img {
+  width: 70%;
+  height: 50%;
+  margin: auto;
+}
+
+.background-fixed {
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+}
+
+.flex-center-wrapper  {
+  display: flex;
+  display: -webkit-flex;
+  align-content: center;
+  -webkit-alight-content: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
+
+.part-1 img {
+  width: 200px;
+  height: 200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.part-1 p {
+  max-width: 700px;
+  margin: auto;
+  margin: auto;
+  text-align: center;
+  }
+
+.part-1 h2 {
+  font-size: 24px;
+}
+
+.social {
+  padding: 20px;
+  margin:0;
+  text-align: center;
+  right:0;
+  left:0;
+}
+
+.social img {
+  width: 65px;
+}
+
+.social li{
+ display:inline-block;
+ transition: background-color 0.5s;
+}
+
+#social {
+  position:absolute;
+  bottom: 20px;
+}
+
+#social li:hover {
+	background-color: rgb(122, 130, 167);
+}
+
+#social2 li:hover {
+  background-color: rgb(75, 79, 88);
+}
+
+
+.part-3 {
+  background-color: #D4EDFF;
+}
+
+#slide-1-img {
+  background-image: url('img/zion.jpg');
+  background-size: cover;
+  background-position: bottom;
+}
+
+#slide-7-img {
+  background-image: url('img/ice-cave.jpg');
+  background-size: cover;
+  background-position: bottom;
+}
+
+#slide-2-img {
+  background-image: url('img/map.png');
+  background-size: cover;
+}
+
+#slide-3-img {
+  background-image: url('img/wordcloud.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#slide-5-img {
+  background-image: url('img/dog-family.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#slide-6-img {
+  background-image: url('img/unbounce.jpg');
+  background-size: cover;
+  background-position: bottom;
+}
+
+#slide-8-img {
+  background-image: url('img/hire-me.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#wordcloud {
+  width: 25vw;
+  min-height: 25vh;
+  margin: auto;
+}
+
+.visual-block {
+  display: inline-block;
+  margin: 20px;
+  height: 150px;
+}
+
+.visual-container {
+  text-align: center;
+}
+
+.sixty-height {
+  height: 60%;
+}
+
+.fourty-height {
+  height: 40%;
+}
+
+.tools {
+  background-color: #4C4C4C;
+}
+
+.tools h3 {
+  color: white;
+}
