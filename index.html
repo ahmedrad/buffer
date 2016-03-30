@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta title="Hire Ahmed Radwan"/>
   <link rel="Stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css"/>
+  <link rel="stylesheet" href="Remodal-1.0.7/dist/remodal.css">
+  <link rel="stylesheet" href="Remodal-1.0.7/dist/remodal-default-theme.css">
   <link rel="stylesheet" href="main.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.7/jquery.fullPage.css" type="text/css" rel="stylesheet"/>
   <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700|Cabin:400,700|PT+Sans:400,700|Josefin+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -260,8 +262,32 @@
       </div>
     </div>
   </div>
+  <div class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking: false, closeOnOutsideClick: false">
+  <h1>WHOOPS!</h1>
+  <p>
+    Unfortunately I did not have time to make this application look pretty on small screens (Better done than perfect am I right? :-/). When you have a moment just open it up on a larger screen to get the full experience!
+  </p>
+  <!-- <button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>
+  <button data-remodal-action="confirm" class="remodal-confirm">OK</button> -->
+  </div>
+<script src="Remodal-1.0.7/dist/remodal.min.js"></script>
 <script>
-  $(document).ready(function() {$('#fullpage').fullpage();});
+  $(document).ready(function() {
+    $('#fullpage').fullpage();
+    modal = $('[data-remodal-id=modal]').remodal();
+    if ($(window).width() < 950) {
+      modal.open();
+    }
+  });
+
+  $(window).resize(function() {
+    if ($(window).width() < 950 && modal.getState() === "closed") {
+      modal.open();
+    }
+    else if ($(window).width() > 950 && modal.getState() === "opened") {
+      modal.close();
+    }
+  })
 </script>
 </body>
 </html>
